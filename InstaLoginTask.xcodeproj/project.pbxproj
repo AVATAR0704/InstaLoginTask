@@ -10,6 +10,9 @@
 		787C86F5280538BA004D316B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787C86F4280538BA004D316B /* User.swift */; };
 		787C86F9280539F9004D316B /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787C86F7280539F8004D316B /* UserTableViewCell.swift */; };
 		787C86FA280539F9004D316B /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787C86F8280539F8004D316B /* UserTableViewCell.xib */; };
+		787C86FD28056973004D316B /* UserTAskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787C86FB28056973004D316B /* UserTAskTableViewCell.swift */; };
+		787C86FE28056973004D316B /* UserTAskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787C86FC28056973004D316B /* UserTAskTableViewCell.xib */; };
+		787C870028056ACC004D316B /* UserTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787C86FF28056ACC004D316B /* UserTask.swift */; };
 		78A5C17A28042D6500DC5498 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5C17928042D6500DC5498 /* AppDelegate.swift */; };
 		78A5C17C28042D6500DC5498 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5C17B28042D6500DC5498 /* SceneDelegate.swift */; };
 		78A5C17E28042D6500DC5498 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5C17D28042D6500DC5498 /* ViewController.swift */; };
@@ -29,6 +32,9 @@
 		787C86F4280538BA004D316B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		787C86F7280539F8004D316B /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		787C86F8280539F8004D316B /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		787C86FB28056973004D316B /* UserTAskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTAskTableViewCell.swift; sourceTree = "<group>"; };
+		787C86FC28056973004D316B /* UserTAskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTAskTableViewCell.xib; sourceTree = "<group>"; };
+		787C86FF28056ACC004D316B /* UserTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTask.swift; sourceTree = "<group>"; };
 		78A5C17628042D6500DC5498 /* InstaLoginTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaLoginTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A5C17928042D6500DC5498 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78A5C17B28042D6500DC5498 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				787C86F4280538BA004D316B /* User.swift */,
+				787C86FF28056ACC004D316B /* UserTask.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -70,6 +77,8 @@
 			children = (
 				787C86F7280539F8004D316B /* UserTableViewCell.swift */,
 				787C86F8280539F8004D316B /* UserTableViewCell.xib */,
+				787C86FB28056973004D316B /* UserTAskTableViewCell.swift */,
+				787C86FC28056973004D316B /* UserTAskTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -93,12 +102,12 @@
 		78A5C17828042D6500DC5498 /* InstaLoginTask */ = {
 			isa = PBXGroup;
 			children = (
-				787C86F6280539D2004D316B /* Cells */,
-				787C86F328053872004D316B /* Models */,
 				78A5C17928042D6500DC5498 /* AppDelegate.swift */,
 				78A5C17B28042D6500DC5498 /* SceneDelegate.swift */,
 				78A5C18728042D6A00DC5498 /* Info.plist */,
 				78A5C18E28042D9300DC5498 /* Controllers */,
+				787C86F6280539D2004D316B /* Cells */,
+				787C86F328053872004D316B /* Models */,
 				78A5C18D28042D8800DC5498 /* AppUtils */,
 			);
 			path = InstaLoginTask;
@@ -194,6 +203,7 @@
 				78A5C18328042D6A00DC5498 /* Assets.xcassets in Resources */,
 				78A5C19A280435AE00DC5498 /* SignUpViewController.xib in Resources */,
 				78A5C18128042D6500DC5498 /* Main.storyboard in Resources */,
+				787C86FE28056973004D316B /* UserTAskTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,10 +215,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A5C199280435AE00DC5498 /* SignUpViewController.swift in Sources */,
+				787C870028056ACC004D316B /* UserTask.swift in Sources */,
 				787C86F9280539F9004D316B /* UserTableViewCell.swift in Sources */,
 				78A5C1952804326E00DC5498 /* HomeViewController.swift in Sources */,
 				78A5C19128042DCC00DC5498 /* SignInViewController.swift in Sources */,
 				78A5C17E28042D6500DC5498 /* ViewController.swift in Sources */,
+				787C86FD28056973004D316B /* UserTAskTableViewCell.swift in Sources */,
 				78A5C17A28042D6500DC5498 /* AppDelegate.swift in Sources */,
 				787C86F5280538BA004D316B /* User.swift in Sources */,
 				78EE367928043C6F0005DBB7 /* BaseViewController.swift in Sources */,

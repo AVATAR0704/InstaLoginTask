@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="359" id="KGk-i7-Jjw" customClass="UserTAskTableViewCell" customModule="InstaLoginTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="359"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="271" height="359"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oLU-ny-LTn">
+                        <rect key="frame" x="0.0" y="0.0" width="271" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_person" translatesAutoresizingMaskIntoConstraints="NO" id="37H-RV-XB2">
+                                <rect key="frame" x="5" y="15" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hIZ-uu-BSW"/>
+                                    <constraint firstAttribute="width" constant="50" id="sho-lo-Udx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufl-Db-Fs7">
+                                <rect key="frame" x="60" y="27.5" width="206" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="SKL-oO-ptv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="37H-RV-XB2" firstAttribute="leading" secondItem="oLU-ny-LTn" secondAttribute="leading" constant="5" id="KTh-U4-ggr"/>
+                            <constraint firstItem="ufl-Db-Fs7" firstAttribute="leading" secondItem="37H-RV-XB2" secondAttribute="trailing" constant="5" id="MVE-xJ-Tcy"/>
+                            <constraint firstAttribute="trailing" secondItem="ufl-Db-Fs7" secondAttribute="trailing" constant="5" id="RYB-E4-U96"/>
+                            <constraint firstItem="ufl-Db-Fs7" firstAttribute="centerY" secondItem="oLU-ny-LTn" secondAttribute="centerY" id="VBu-Cd-g4y"/>
+                            <constraint firstItem="37H-RV-XB2" firstAttribute="centerY" secondItem="oLU-ny-LTn" secondAttribute="centerY" id="XT1-1O-znv"/>
+                            <constraint firstAttribute="height" constant="80" id="jXp-WE-xTg"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xU5-0P-hK2">
+                        <rect key="frame" x="0.0" y="80" width="271" height="279"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zk3-0O-obk">
+                                <rect key="frame" x="0.0" y="0.0" width="135.5" height="279"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LEf-wU-As2">
+                                <rect key="frame" x="135.5" y="0.0" width="135.5" height="279"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="LEf-wU-As2" firstAttribute="top" secondItem="xU5-0P-hK2" secondAttribute="top" id="IdZ-29-luV"/>
+                            <constraint firstAttribute="bottom" secondItem="LEf-wU-As2" secondAttribute="bottom" id="M73-eC-eNB"/>
+                            <constraint firstAttribute="bottom" secondItem="Zk3-0O-obk" secondAttribute="bottom" id="vsv-Xg-lLO"/>
+                            <constraint firstItem="Zk3-0O-obk" firstAttribute="top" secondItem="xU5-0P-hK2" secondAttribute="top" id="wH5-UP-31z"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oLU-ny-LTn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1Xh-Ed-d6l"/>
+                    <constraint firstItem="oLU-ny-LTn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4n0-a3-n2a"/>
+                    <constraint firstAttribute="trailing" secondItem="oLU-ny-LTn" secondAttribute="trailing" id="Dek-Xi-asq"/>
+                    <constraint firstAttribute="trailing" secondItem="xU5-0P-hK2" secondAttribute="trailing" id="GAX-B2-NLO"/>
+                    <constraint firstItem="xU5-0P-hK2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Sfm-hi-ww0"/>
+                    <constraint firstAttribute="bottom" secondItem="xU5-0P-hK2" secondAttribute="bottom" id="maZ-1z-VwJ"/>
+                    <constraint firstItem="xU5-0P-hK2" firstAttribute="top" secondItem="oLU-ny-LTn" secondAttribute="bottom" id="wDn-c4-ema"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nmFullName" destination="ufl-Db-Fs7" id="iXk-Qe-S5S"/>
+                <outlet property="nmImgView1" destination="Zk3-0O-obk" id="eQ8-8I-ebP"/>
+                <outlet property="nmImgView2" destination="LEf-wU-As2" id="eYE-59-Noz"/>
+                <outlet property="nmProfileImg" destination="37H-RV-XB2" id="vG2-ep-pfn"/>
+                <outlet property="nmTepaView" destination="oLU-ny-LTn" id="tcS-Fq-mgN"/>
+            </connections>
+            <point key="canvasLocation" x="102.17391304347827" y="219.30803571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_person" width="24" height="24"/>
+    </resources>
+</document>

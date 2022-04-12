@@ -28,7 +28,7 @@ class UserTableViewCell: UITableViewCell {
     
     
     override func layoutSubviews() {
-        
+        super.layoutSubviews()
     
         startFunction()
     }
